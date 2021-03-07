@@ -1,0 +1,19 @@
+Learned: dowload postgresql, install, log in and log out.
+TODO: install database server, create database, do CRUD
+For productivity's sake I installed psycopg2 globally.
+I need to learn how to set up a virtual environment.
+It would also be nice not to type python3 instead of python every time I run
+a command, and get better at knowing the commands and options off the bat.
+? Does a virtual environment need to be set up for every project?
+Okay, you can do python3 and pip3 so there's that
+pipenv shell should create environment for the current directory I think
+pipenv command isn't working in venv but pip does
+I'm guessing it has to do with PATH
+https://python-docs.readthedocs.io/en/latest/dev/virtualenvs.html
+in pipenv python can be used but outside python3 globally
+Kludgily I can test if I'm in the venv by doing python --version
+import sys command doesn't work in venv (at least)
+but other than that the command line is prepended with the directory I am in
+Pipfile generated but does not add packages; pip freeze will show packages
+Pipfile.lock not generated
+pip freeze works
