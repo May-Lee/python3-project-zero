@@ -1,2 +1,7 @@
 import psycopg2
-con.close
+
+#connection must be opened to database
+
+con = psycopg2.connect (
+    host = 
+)
