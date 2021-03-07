@@ -1,0 +1,4 @@
+Learned: dowload postgresql, install, log in and log out.
+TODO: install database server, create database, do CRUD
+How do I manage handle installing pip? I don't understand the use of a virtual
+environment and the difference between python and python3.
