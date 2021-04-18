@@ -7,10 +7,8 @@ import os
 app = Flask(__name__)
 basedir = os.path.abspath(os.path.dirname(__file__)) # create file path
 
-# Create a test route
-@app.route('/', methods=['GET'])
-def get():
-    return jsonify({'msg': 'Hello World'})
+# Create a database
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///' + os.path.join(basedir, 'db.sqlite')
 
 # Run server
 if __name__ == '__main__':
