@@ -6,6 +6,25 @@ Today's learning goal:
 Think in terms of commits and branches when building your app
 Understand your system more, and how to use pip/pipenv 
 
+`pipenv shell` creates the Pipfile and starts the virtual environment 
+`exit` to exit`
+
+`pipenv install <package-name>` to install and create `pipfile.lock` which leads to deterministic 
+build 
+
+`pip install <package-name> --dev` to install as dev package 
+
+`pipenv uninstall <package-name>` 
+
+`pipenv check` to check for security issues
+
+`pipenv install -r ./requirements.txt` install from a text file on same directory level 
+
+`pipenv graph` will show dependency tree 
+
+invoke `python` first to import 
+
+
 Learned: dowload postgresql, install, log in and log out.
 TODO: install database server, create database, do CRUD
 For productivity's sake I installed psycopg2 globally.
@@ -20,7 +39,6 @@ I'm guessing it has to do with PATH
 https://python-docs.readthedocs.io/en/latest/dev/virtualenvs.html
 in pipenv python can be used but outside python3 globally
 Kludgily I can test if I'm in the venv by doing python --version
-import sys command doesn't work in venv (at least)
 but other than that the command line is prepended with the directory I am in
 Pipfile generated but does not add packages; pip freeze will show packages
 Pipfile.lock not generated
