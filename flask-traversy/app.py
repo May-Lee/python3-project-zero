@@ -5,6 +5,7 @@ import os
 
 # Init app
 app = Flask(__name__)
+basedir = os.path.abspath(os.path.dirname(__file__)) # create file path
 
 # Create a test route
 @app.route('/', methods=['GET'])
