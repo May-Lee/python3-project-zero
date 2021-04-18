@@ -6,6 +6,11 @@ import os
 # Init app
 app = Flask(__name__)
 
+# Create a test route
+@app.route('/', methods=['GET'])
+def get():
+    return jsonify({'msg': 'Hello World'})
+
 # Run server
 if __name__ == '__main__':
     app.run(debug=True) # debug for development
