@@ -9,6 +9,7 @@ basedir = os.path.abspath(os.path.dirname(__file__)) # create file path
 
 # Create a database
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///' + os.path.join(basedir, 'db.sqlite')
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False 
 
 # Run server
 if __name__ == '__main__':
