@@ -48,6 +48,13 @@ class ExtensionURI(db.Model):
         self.size = size
         self.tail_codec_params = tail_codec_params
 
+# Extension Schema
+class ExtensionSchema(ma.Schema):
+    Class Meta:
+        fields = ('id', 'codec_name', 'codec_params', 'crypttext_hash', 'crypttext_root_hash',
+                  'needed_shares', 'num_segments', 'segment_size', 'share_root_hash', 'size'
+                  'tail_codec_params')
+
 # Run server
 if __name__ == '__main__':
     app.run(debug=True) # debug for development
