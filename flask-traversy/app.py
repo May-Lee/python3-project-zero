@@ -50,13 +50,13 @@ class ExtensionURI(db.Model):
 
 # Extension Schema
 class ExtensionSchema(ma.Schema):
-    Class Meta:
+    class Meta:
         fields = ('id', 'codec_name', 'codec_params', 'crypttext_hash', 'crypttext_root_hash',
                   'needed_shares', 'num_segments', 'segment_size', 'share_root_hash', 'size'
                   'tail_codec_params')
 # Init schema
-product_schema = ProductSchema(strict=True)
-products_schema = ProductSchema(many=True, strict=True)
+extension_schema = ExtensionSchema()
+extensions_schema = ExtensionSchema(many=True)
 
 # Run server
 if __name__ == '__main__':
