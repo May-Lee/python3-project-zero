@@ -43,3 +43,12 @@ but other than that the command line is prepended with the directory I am in
 Pipfile generated but does not add packages; pip freeze will show packages
 Pipfile.lock not generated
 pip freeze works
+
+To create the initial database, just import the db object from an interactive 
+Python shell and run the SQLAlchemy.create_all() method to create the tables and 
+database:
+
+`from <this-application> import db`
+`db.create_all()`
+
+https://flask-sqlalchemy.palletsprojects.com/en/2.x/quickstart/
